@@ -1,5 +1,6 @@
 import { Inter } from 'next/font/google'
 import './globals.css'
+import { CardProvider } from '@/context/cardContext'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -11,7 +12,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="es">
+      <CardProvider>
       <body className={inter.className}>{children}</body>
+      </CardProvider>
     </html>
   )
 }
