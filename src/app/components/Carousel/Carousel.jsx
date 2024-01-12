@@ -1,9 +1,14 @@
 import React from 'react'
 
-function Carousel() {
+
+export default function Carousel({cards}) {
   return (
-    <div>Carousel</div>
+    <div>
+      
+      {cards.map((card)=>(
+        <p key={card.id}>{card.spanishName}</p>
+      ))}
+    </div>
   )
 }
 
-export default Carousel
