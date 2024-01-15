@@ -14,35 +14,34 @@ import "slick-carousel/slick/slick-theme.css";
     </div>
   );
 } */
+function random(array) { 
 
-export default function Carousel() {
-  var settings = {
+  for (let i = array.length - 1; i > 0; i--) { 
+  const j = Math.floor(Math.random() * (i + 1)); 
+  [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array
+
+  }
+
+export default function Carousel({cards}) {
+  random(cards)
+  const settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1
+    slidesToShow: 10,
+    slidesToScroll: 10
   };
   return (
     <Slider {...settings}>
+      {cards.map((card) => (
       <div>
-        <h3>1</h3>
+    <img key={card.id} src="img/card-back.png" alt="carta reverso de sakura" />
       </div>
-      <div>
-        <h3>2</h3>
-      </div>
-      <div>
-        <h3>3</h3>
-      </div>
-      <div>
-        <h3>4</h3>
-      </div>
-      <div>
-        <h3>5</h3>
-      </div>
-      <div>
-        <h3>6</h3>
-      </div>
+      ))}
+      
+      
     </Slider>
   );
 }
