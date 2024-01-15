@@ -1,8 +1,10 @@
+
 import Slider from "react-slick";
 import React, { useState } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Card from "../Card/Card";
+import styles from './carousel.module.css'
 
 
 function random(array) {
@@ -30,7 +32,7 @@ export default function Carousel({ cards }) {
   };
 
   return (
-    <div>
+    <div className={styles.carruselContainer}>
       <Slider {...settings}>
         {cards.map((card) => (
           <div key={card.id}>
