@@ -1,47 +1,49 @@
-
 import Slider from "react-slick";
-import React, {useState, useEffect} from "react";
+import React, { useState } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Card from "../Card/Card";
 
 
-/* export default function Carousel({ cards }) {
-  return (
-    <div>
-      {cards.map((card) => (
-        <p key={card.id}>{card.spanishName}</p>
-      ))}
-    </div>
-  );
-} */
-function random(array) { 
-
-  for (let i = array.length - 1; i > 0; i--) { 
-  const j = Math.floor(Math.random() * (i + 1)); 
-  [array[i], array[j]] = [array[j], array[i]];
+function random(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
   }
-  return array
+  return array;
+}
 
-  }
+export default function Carousel({ cards }) {
+  const [selectedCard, setSelectedCard] = useState(null);
 
-export default function Carousel({cards}) {
-  random(cards)
+  random(cards);
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 10,
-    slidesToScroll: 10
+    slidesToScroll: 10,
   };
+
+  const handleImageClick = (card) => {
+    setSelectedCard(card);
+  };
+
   return (
-    <Slider {...settings}>
-      {cards.map((card) => (
-      <div>
-    <img key={card.id} src="img/card-back.png" alt="carta reverso de sakura" />
-      </div>
-      ))}
-      
-      
-    </Slider>
+    <div>
+      <Slider {...settings}>
+        {cards.map((card) => (
+          <div key={card.id}>
+            <img
+              src="img/card-back.png"
+              alt="carta reverso de sakura"
+              onClick={() => handleImageClick(card)}
+            />
+          </div>
+        ))}
+      </Slider>
+      {/* Pasar la carta seleccionada como prop al componente Card */}
+      {selectedCard && <Card card={selectedCard} />}
+    </div>
   );
 }
