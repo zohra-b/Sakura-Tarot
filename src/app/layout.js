@@ -17,12 +17,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="es">
-      <Header />
       <CardProvider>
+     
         <body className={inter.className}>
+        <Header />
           {children}
+          <Footer/>
         </body>
-        <Footer/>
+        
       </CardProvider>
     </html>
   );
