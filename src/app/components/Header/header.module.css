@@ -1,0 +1,11 @@
+.header{
+    width: 100%;
+    background-color: var( --secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header img{
+    width:8%;
+    padding: .5rem;
+}
