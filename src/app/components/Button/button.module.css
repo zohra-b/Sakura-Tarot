@@ -1,0 +1,17 @@
+.buttonPrimary, .buttonSecondary {
+    border-radius: 0.75rem;
+    padding: 1rem 6.25rem;
+    border: none;
+    Font-weight: bold;
+    font-size: var(--p);
+    }
+
+.buttonPrimary{
+background: var(--primary-color);
+color: var(--text-light);
+}
+
+.buttonSecondary{
+    background: var(--text-light);
+    color: var(--primary-color);
+    }

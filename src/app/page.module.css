@@ -1,0 +1,12 @@
+.main{
+   display: flex;
+   justify-content: center;
+   gap: 3rem;
+   margin:8rem 1rem;
+}
+
+.section{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
