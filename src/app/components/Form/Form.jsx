@@ -8,6 +8,7 @@ export default function Form() {
 
   const onChangeHandler = (event) => {
     setInputValue(event.target.value);
+    open.window('../../tirada')
   };
 
   return (
