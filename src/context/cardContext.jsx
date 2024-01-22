@@ -10,7 +10,10 @@ export function CardProvider({ children }) {
   useEffect(() => {
     fetch('https://6388b6e5a4bb27a7f78f96a5.mockapi.io/sakura-cards')
       .then((response) => response.json())
-      .then((data) => setCards(data))
+      .then((data) => {
+        const randomCards = data.sort(() => Math.random() - 0.5);
+        setCards(randomCards);
+      })
       .catch((error) => console.error('Error fetching data:', error));
   }, []);
 
