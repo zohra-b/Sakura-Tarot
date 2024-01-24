@@ -1,13 +1,22 @@
 'use client';
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styles from './carousel.module.css';
 import Slider from "react-slick";
+import { sakuraApi } from "@/app/services/sakuraApi";
 
+export default function Carousel() {
+const service = sakuraApi()
+const [cards, setCards] = useState([])
+useEffect(() => {
+  service.getAll().then((res) => res.data)
+  .then((data) => {
+    const randomCards = (data.sort(() => Math.random() -0.5))
+    setCards(randomCards)
+  });
 
-export default function Carousel({ cards }) {
-  const [selectedCards, setSelectedCards] = useState([]);
+},[])
 
   const settings = {
     dots: true,
@@ -16,19 +25,7 @@ export default function Carousel({ cards }) {
     slidesToShow: 10,
     slidesToScroll: 10,
   };
-
-  const SelectCard = (cardId) => {
-    if (selectedCards.length < 3) {
-      const selectedCard = cards.find((card) => card.id === cardId);
-
-      setSelectedCards((prevSelectedCards) => {
-        const updatedSelectedCards = [...prevSelectedCards, selectedCard];
-        return updatedSelectedCards
-      });
-    }
-  };
-
-  console.log(selectedCards)
+  
 
   return (
     <section className={styles.carruselContainer}>

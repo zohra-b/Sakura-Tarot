@@ -1,10 +1,10 @@
 'use client';
 import Form from './components/Form/Form';
 import styles from './page.module.css';
-import { useCards } from '@/context/cardContext';
+
 
 export default function Home() {
-  const cards = useCards();
+
   return (
     <main className={styles.main}>
       <section className={styles.section}>
