@@ -5,8 +5,9 @@ import "slick-carousel/slick/slick-theme.css";
 import styles from './carousel.module.css';
 import Slider from "react-slick";
 import { sakuraApi } from "@/app/services/sakuraApi";
+import Card from "../Card/Card";
 
-export default function Carousel() {
+export default function Carousel({reading, setReading}) {
 const service = sakuraApi()
 const [cards, setCards] = useState([])
 useEffect(() => {
@@ -31,13 +32,7 @@ useEffect(() => {
     <section className={styles.carruselContainer}>
       <Slider {...settings}>
         {cards.map((card) => (
-          <div key={card.id}>
-            <img
-              src="img/card-back.png"
-              alt="carta reverso de sakura"
-              onClick={() => SelectCard(card.id)}
-            />
-          </div>
+          <Card key={card.id}  reading = {reading} setReading = {setReading} card = {card}  />
         ))}
       </Slider>
     </section>

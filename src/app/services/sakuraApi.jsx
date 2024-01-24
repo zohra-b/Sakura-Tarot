@@ -10,7 +10,6 @@ export const sakuraApi = () => {
 
     const getAll = async () => {
         const response = await axios.get(baseUrl)
-        console.log(response)
         return response 
     }
     return {
