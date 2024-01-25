@@ -23,13 +23,13 @@ useEffect(() => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 10,
-    slidesToScroll: 10,
+    slidesToShow: 15,
+    slidesToScroll: 15,
   };
   
 
   return (
-    <section className={styles.carruselContainer}>
+    <section className={styles.carouselContainer}>
       <Slider {...settings}>
         {cards.map((card) => (
           <Card key={card.id}  reading = {reading} setReading = {setReading} card = {card}  />

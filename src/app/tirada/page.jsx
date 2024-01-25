@@ -48,12 +48,14 @@ export default function Tirada() {
 
   return (
     <main className={styles.main}>
+      <section>
       <h1 className={styles.titleWithOrnament}>
         <img className={styles.sakuraOrnament} src="/img/sakura-ornament.png" alt="flor sakura" />
         Elige tres cartas
         <img className={styles.sakuraOrnament} src="/img/sakura-ornament.png" alt="flor sakura" />
       </h1>
       <h2>Desliza para ver todas las cartas</h2>
+      </section>
       <Carousel reading={reading} setReading={setReading} />
       <CardsContainer reading={reading} />
       <Input
@@ -62,8 +64,8 @@ export default function Tirada() {
         action={(event) => saveName(event)}
       />
       <div className={styles.buttonsContainer}>
-        <Button action ={() =>saveReading()} isPrimary text={'Guarda mi tirada'} />
-        <Link href='./../historial/'><Button text={'Ir al historial'} type="submit" /></Link>
+        <Button action ={() =>saveReading()} isPrimary text={'Guardar'} />
+        <Link href='./../historial/'><Button text={'Historial'} type="submit" /></Link>
       </div>
         {alert && (
         <Alert severity="success" onClose={()=>setAlert(false)}>Tu tirada se ha guardado correctamente</Alert>)}

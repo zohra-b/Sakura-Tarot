@@ -1,18 +1,21 @@
 .main {
+  width: 100vw;
   background-image: url('/img/ornament-bg.png');
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 70%;
-  margin: 2rem auto 10rem;
-  max-width: 1440px;
+  background-size: 60%;
   min-height: calc(100vh - 25.2rem);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 h1.titleWithOrnament {
   display: flex;
   gap: 1rem;
   justify-content: center;
-  margin-top: 4rem;
+  margin-top: 3rem;
   min-width: 690px;
 }
 
@@ -22,15 +25,12 @@ h1.titleWithOrnament {
   width: 100%;
 }
 
-.main h2 {
-  margin-bottom: 3rem;
-}
 
 .buttonsContainer {
   display: flex;
   gap: 4rem;
   justify-content: center;
-  margin: 0 auto;
+  margin-bottom: 3rem;
 }
 
 @media (max-width: 768px) {
