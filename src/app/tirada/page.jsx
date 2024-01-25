@@ -4,9 +4,23 @@ import Carousel from '../components/Carousel/Carousel';
 import CardsContainer from '../components/CardsContainer/CardsContainer';
 import Button from '../components/Button/Button';
 import { useState } from 'react';
+import { historialapi } from '../services/historial';
 
 export default function Tirada() {
   const [reading, setReading] = useState([]);
+
+  const historialApi = historialapi()
+  
+  const saveReading = () => {
+    historialApi.createHist(reading).then((res)=> {
+      console.log(res)
+  
+    })
+
+  }
+
+  
+
   return (
     <main className={styles.main}>
       <h1 className={styles.titleWithOrnament}>
@@ -18,7 +32,7 @@ export default function Tirada() {
       <Carousel reading={reading} setReading={setReading} />
       <CardsContainer reading={reading} />
       <div className={styles.buttonsContainer}>
-        <Button isPrimary text={'Guarda mi tirada'} type="submit" />
+        <Button action ={() =>saveReading()} isPrimary text={'Guarda mi tirada'} />
         <Button text={'Ir al historial'} type="submit" />
       </div>
     </main>
