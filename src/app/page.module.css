@@ -26,6 +26,10 @@ h1.titleWithOrnament {
   min-width: 690px;
 }
 
+.section p {
+  text-align: center;
+}
+
 .sakuraOrnament {
   max-height: 60px;
   max-width: 55px;

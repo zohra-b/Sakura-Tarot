@@ -4,9 +4,7 @@ import styles from './page.module.css';
 import Link from 'next/link';
 import Button from './components/Button/Button';
 
-
 export default function Home() {
-
   return (
     <main className={styles.main}>
       <section className={styles.section}>
@@ -17,7 +15,16 @@ export default function Home() {
         </h1>
 
         <h2>Deja que nuestras cartas te guien</h2>
-        <Link href='./tirada'><Button isPrimary text={'Ir a la tirada'} type="submit" /></Link>
+        <p>
+          <strong>¡Explora el poder de la adivinación con la belleza de las cartas de Sakura!</strong>
+        </p>
+        <p>
+          Encuentra la guía que necesitas para tu camino: selecciona tres cartas y desvela los misterios de tu pasado,
+          presente y futuro.
+        </p>
+        <Link href="./tirada">
+          <Button isPrimary text={'Ir a la tirada'} />
+        </Link>
       </section>
       <aside className={styles.aside}>
         <img className={styles.heroImg} src="/img/hero-img.png" alt="imagen tres cartas" />
