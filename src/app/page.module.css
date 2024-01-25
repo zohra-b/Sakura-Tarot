@@ -1,27 +1,22 @@
 .main {
-  width: 95vw;
-  height: 90vh;
-  max-height: 100vh;
   background-image: url('/img/ornament-bg.png');
-  background-position:right;
+  background-position: right;
   background-repeat: no-repeat;
   background-size: 25%;
-  gap: 3rem;
-  max-height: 100vh;
   display: flex;
-  justify-content:space-around;
-  align-items: center;
-  text-align: center;
+  gap: 3rem;
+  height: calc(100vh - 25.2rem);
+  justify-content: center;
+  margin: 8rem auto;
+  max-width: 1440px;
 }
 
 .section {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
   gap: 2rem;
-  width: 60%;
+  width: 50%;
 }
 
 h1.titleWithOrnament {
@@ -32,7 +27,6 @@ h1.titleWithOrnament {
 }
 
 .section p {
-  width: 60%;
   text-align: center;
 }
 
@@ -41,14 +35,7 @@ h1.titleWithOrnament {
   max-width: 55px;
   width: 100%;
 }
-.aside{
-  width: 30%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
 
-}
 @media (max-width: 1120px) {
   .main {
     background-position: center;
