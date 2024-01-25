@@ -63,8 +63,8 @@ Con estos pasos, los usuarios podrán disfrutar de una experiencia de lectura de
 ## ## Vista Previa 🌠 📸
 
 ![Pagina-principal](image.png)
-![Pagina-tiradas](image-1.png) 
-![Tiradas](image-2.png)
+![Pagina-tiradas](image-2.png)
+![Tiradas](image-3.png)
 
 ## Autoras 👩‍💻
 
