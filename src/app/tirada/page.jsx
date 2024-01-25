@@ -6,10 +6,12 @@ import Button from '../components/Button/Button';
 import { useState } from 'react';
 import { historialapi } from '../services/historial';
 import Input from '../components/Input/Input';
+import { Alert } from '@mui/material';
 
 export default function Tirada() {
   const [reading, setReading] = useState([]);
   const [name, setName] = useState('');
+  const [alert, setAlert]=useState(false);
 
   
 
@@ -34,9 +36,12 @@ export default function Tirada() {
     reading: reading,
   };
 
-  historyApi.createHist(dataToSave).then((res)=> {
-    console.log(res)
-  
+  historyApi.createHist(dataToSave)
+  .then((res)=> {
+    setAlert(true);
+    })
+  .catch((error) => {
+    setAlert(false); 
   })
   }
 
@@ -59,6 +64,8 @@ export default function Tirada() {
         <Button action ={() =>saveReading()} isPrimary text={'Guarda mi tirada'} />
         <Button text={'Ir al historial'} type="submit" />
       </div>
+        {alert && (
+        <Alert severity="success" onClose={()=>setAlert(false)}>Tu tirada se ha guardado correctamente</Alert>)}
     </main>
   );
 }
