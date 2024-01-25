@@ -10,13 +10,13 @@ import Card from "../Card/Card";
 export default function Carousel({reading, setReading}) {
 const service = sakuraApi()
 const [cards, setCards] = useState([])
+
 useEffect(() => {
   service.getAll().then((res) => res.data)
   .then((data) => {
     const randomCards = (data.sort(() => Math.random() -0.5))
     setCards(randomCards)
   });
-
 },[])
 
   const settings = {
