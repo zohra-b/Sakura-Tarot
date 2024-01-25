@@ -6,6 +6,14 @@ Bienvenido a nuestro místico proyecto de lectura de cartas. Esta aplicación we
 
 ![Gif de Lectura de Cartas](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYTJmMDA2dHZxeW93dTI4MTZra242bGFlNndhbXBkcmFiOTBjengyMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/SrWh9peE9r1MTVr8aQ/giphy.gif)
 
+   ## API de Sakura 🌸
+
+Este proyecto consume la API de Sakura, que devuelve un archivo JSON con información sobre las cartas. Puedes escoger entre mostrar la Sakura Card y explorar sus detalles en la aplicación.
+
+### Uso de la API
+
+Para obtener información sobre una Sakura Card específica, puedes hacer una solicitud a la siguiente URL:
+https://6388b6e5a4bb27a7f78f96a5.mockapi.io/sakura-cards/
 
 ## Tecnologías Utilizadas 💻
 
@@ -63,29 +71,31 @@ Con estos pasos, los usuarios podrán disfrutar de una experiencia de lectura de
 ## ## Vista Previa 🌠 📸
 
 ![Pagina-principal](image.png)
-![Pagina-tiradas](image-2.png)
 ![Tiradas](image-3.png)
+![Pagina-tiradas](image-2.png)
+
 
 ## Autoras 👩‍💻
 
 Este proyecto fue creado con amor y pasión por:
 
-- [Nombre de la Autora](enlace_a_perfil_linkedin)
+- [Laura Gil Solano]
+   - [LinkedIn](https://www.linkedin.com/in/laura-gil-solano/)
+
+- [Otro Nombre de Autora]
    - [LinkedIn](enlace_a_perfil_linkedin)
 
-- [Otro Nombre de Autora](enlace_a_perfil_linkedin)
-   - [LinkedIn](enlace_a_perfil_linkedin)
-- [Nombre de la Autora](enlace_a_perfil_linkedin)
-   - [LinkedIn](enlace_a_perfil_linkedin)
+- [Stefania Desogus]
+   - [LinkedIn](https://www.linkedin.com/in/stefania-desogus/)
 
 - [Gabriela Irimia](https://www.linkedin.com/in/gabriela-irimia/)
    - [LinkedIn](https://www.linkedin.com/in/gabriela-irimia/)
 
-   - [Nombre de la Autora](enlace_a_perfil_linkedin) 
-   - [LinkedIn](enlace_a_perfil_linkedin)
+   - [Jessica Zapata]
+   - [LinkedIn](https://www.linkedin.com/in/j%C3%A9ssica-zapata-sol%C3%B3rzano-07401b29b/)
 
-- [Otro Nombre de Autora](enlace_a_perfil_linkedin) 
-   - [LinkedIn](enlace_a_perfil_linkedin)
+- [Zohra Bellamine]
+   - [LinkedIn](https://www.linkedin.com/in/z-bellamine/)
 
 ## Estructura del Proyecto 🏗️
 
