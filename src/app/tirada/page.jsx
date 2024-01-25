@@ -3,6 +3,7 @@ import styles from './page.module.css';
 import Carousel from '../components/Carousel/Carousel';
 import CardsContainer from '../components/CardsContainer/CardsContainer';
 import Button from '../components/Button/Button';
+import Link from 'next/link';
 import { useState } from 'react';
 import { historialapi } from '../services/historial';
 import Input from '../components/Input/Input';
@@ -62,7 +63,7 @@ export default function Tirada() {
       />
       <div className={styles.buttonsContainer}>
         <Button action ={() =>saveReading()} isPrimary text={'Guarda mi tirada'} />
-        <Button text={'Ir al historial'} type="submit" />
+        <Link href='./../historial/'><Button text={'Ir al historial'} type="submit" /></Link>
       </div>
         {alert && (
         <Alert severity="success" onClose={()=>setAlert(false)}>Tu tirada se ha guardado correctamente</Alert>)}

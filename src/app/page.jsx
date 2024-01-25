@@ -1,6 +1,8 @@
 'use client';
 import Form from './components/Form/Form';
 import styles from './page.module.css';
+import Link from 'next/link';
+import Button from './components/Button/Button';
 
 
 export default function Home() {
@@ -15,7 +17,7 @@ export default function Home() {
         </h1>
 
         <h2>Deja que nuestras cartas te guien</h2>
-        <Form />
+        <Link href='./tirada'><Button isPrimary text={'Ir a la tirada'} type="submit" /></Link>
       </section>
       <aside className={styles.aside}>
         <img className={styles.heroImg} src="/img/hero-img.png" alt="imagen tres cartas" />
