@@ -11,6 +11,8 @@ export default function Tirada() {
   const [reading, setReading] = useState([]);
   const [name, setName] = useState('');
 
+  
+
   const saveName = (event) => {
     const newName = event.target.value;
     setName(newName);
@@ -19,9 +21,15 @@ export default function Tirada() {
   const historyApi = historialapi();
 
   const saveReading = () => {
+    const today = new Date();
+    const year = today.getFullYear();
+    const month = today.getMonth() + 1;
+    const day = today.getDate();
+    const dateFormat = `${day.toString().padStart(2, '0')}/${month.toString().padStart(2, '0')}/${year}`;
 
       
   const dataToSave = {
+    date: dateFormat,
     name: name,
     reading: reading,
   };
