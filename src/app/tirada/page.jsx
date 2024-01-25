@@ -9,10 +9,10 @@ import { historialapi } from '../services/historial';
 export default function Tirada() {
   const [reading, setReading] = useState([]);
 
-  const historialApi = historialapi()
+  const historyApi = historialapi();
   
   const saveReading = () => {
-    historialApi.createHist(reading).then((res)=> {
+    historyApi.createHist(reading).then((res)=> {
       console.log(res)
   
     })
