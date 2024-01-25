@@ -10,7 +10,12 @@ export const historialapi =() => {
         return response;
     }
 
- return {createHist}
+    const getHist= async () => {
+        const response = await axios.get(baseUrl)
+        return response 
+    }
+
+ return {createHist, getHist}
 
 
 
