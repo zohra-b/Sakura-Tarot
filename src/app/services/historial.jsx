@@ -10,7 +10,7 @@ export const historialapi =() => {
         return response;
     }
 
- return createHist
+ return {createHist}
 
 
 
