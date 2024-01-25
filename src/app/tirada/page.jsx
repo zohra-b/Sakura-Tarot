@@ -5,21 +5,32 @@ import CardsContainer from '../components/CardsContainer/CardsContainer';
 import Button from '../components/Button/Button';
 import { useState } from 'react';
 import { historialapi } from '../services/historial';
+import Input from '../components/Input/Input';
 
 export default function Tirada() {
   const [reading, setReading] = useState([]);
+  const [name, setName] = useState('');
+
+  const saveName = (event) => {
+    const newName = event.target.value;
+    setName(newName);
+  };
 
   const historyApi = historialapi();
-  
+
   const saveReading = () => {
-    historyApi.createHist(reading).then((res)=> {
-      console.log(res)
-  
-    })
 
+      
+  const dataToSave = {
+    name: name,
+    reading: reading,
+  };
+
+  historyApi.createHist(dataToSave).then((res)=> {
+    console.log(res)
+  
+  })
   }
-
-  
 
   return (
     <main className={styles.main}>
@@ -31,6 +42,11 @@ export default function Tirada() {
       <h2>Desliza para ver todas las cartas</h2>
       <Carousel reading={reading} setReading={setReading} />
       <CardsContainer reading={reading} />
+      <Input
+        placeholder="Nombre"
+        value={name}
+        action={(event) => saveName(event)}
+      />
       <div className={styles.buttonsContainer}>
         <Button action ={() =>saveReading()} isPrimary text={'Guarda mi tirada'} />
         <Button text={'Ir al historial'} type="submit" />

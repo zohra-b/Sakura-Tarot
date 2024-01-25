@@ -1,0 +1,27 @@
+.form {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 2rem;
+  }
+  
+  .form input {
+    background: var(--text-light, #fff);
+    border: 1px solid var(--primary-color);
+    border-radius: 0.75rem;
+    font-size: var(--p);
+    padding: 1rem 1.5rem;
+  }
+  
+  .form input::placeholder {
+    font-size: var(--p);
+  }
+  
+  .form input:focus {
+    outline: 0.1rem solid;
+    outline-color: var(--primary-color);
+    transition: all 100ms ease-in-out;
+  }
+  
