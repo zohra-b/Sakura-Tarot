@@ -1,33 +1,22 @@
 .main {
+  width: 100vw;
   background-image: url('/img/ornament-bg.png');
-  background-position: right;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: 25%;
+  background-size: 60%;
+  min-height: calc(100vh - 25.2rem);
   display: flex;
-  gap: 3rem;
-  height: calc(100vh - 25.2rem);
-  justify-content: center;
-  margin: 8rem auto;
-  max-width: 1440px;
-}
-
-.section {
   align-items: center;
-  display: flex;
   flex-direction: column;
   gap: 2rem;
-  width: 50%;
 }
 
 h1.titleWithOrnament {
   display: flex;
   gap: 1rem;
   justify-content: center;
+  margin-top: 3rem;
   min-width: 690px;
-}
-
-.section p {
-  text-align: center;
 }
 
 .sakuraOrnament {
@@ -36,16 +25,23 @@ h1.titleWithOrnament {
   width: 100%;
 }
 
-@media (max-width: 1120px) {
-  .main {
-    background-position: center;
-    background-size: 55%;
-  }
-  .aside {
-    display: none;
-  }
 
+.buttonsContainer {
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 768px) {
   h1.titleWithOrnament {
     min-width: auto;
+  }
+
+  .buttonsContainer {
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 0 auto;
   }
 }

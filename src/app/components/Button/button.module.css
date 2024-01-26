@@ -1,0 +1,35 @@
+.buttonPrimary,
+.buttonSecondary {
+  border: none;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  font-size: var(--p);
+  font-weight: bold;
+  max-width: 21.6875rem;
+  padding: 1rem 6.25rem;
+  transition: all 400ms ease-in-out;
+}
+
+.buttonPrimary {
+  background: var(--primary-color);
+  color: var(--text-light);
+}
+
+.buttonSecondary {
+  background: var(--text-light);
+  color: var(--primary-color);
+}
+
+.buttonPrimary:hover,
+.buttonSecondary:hover {
+  box-shadow: -9px 21px 15px -9px rgba(53, 0, 28, 0.1);
+  opacity: 0.9;
+  transition: all 400ms ease-in-out;
+}
+
+@media (max-width: 480px) {
+  .buttonPrimary,
+  .buttonSecondary {
+    max-width: 100%;
+  }
+}
