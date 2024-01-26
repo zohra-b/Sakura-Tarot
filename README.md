@@ -71,9 +71,10 @@ Con estos pasos, los usuarios podrán disfrutar de una experiencia de lectura de
 
 ## ## Vista Previa 🌠 📸
 
-![Pagina-principal](image-1.png)
-![Tiradas](image-3.png)
-![Pagina-tiradas](image-2.png)
+![Pagina-principal](<Captura de pantalla 2024-01-26 094522-1.png>)
+![Tiradas](<Captura de pantalla 2024-01-26 094543-1.png>)
+![Pagina-tiradas](<Captura de pantalla 2024-01-26 094614.png>)
+![Historial](<Captura de pantalla 2024-01-26 094645.png>)
 
 
 ## Autoras 👩‍💻
