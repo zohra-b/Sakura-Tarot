@@ -1,5 +1,4 @@
 'use client';
-import Form from './components/Form/Form';
 import styles from './page.module.css';
 import Link from 'next/link';
 import Button from './components/Button/Button';
