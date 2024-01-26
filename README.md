@@ -20,6 +20,7 @@ https://6388b6e5a4bb27a7f78f96a5.mockapi.io/sakura-cards/
 - ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white&style=flat)
 - ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white&style=flat)
 - ![Javascript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black&style=flat)
+- ![React Slick](https://img.shields.io/badge/React%20Slick-CA4245?logo=react&logoColor=white&style=flat)
 - ![React.js](https://img.shields.io/badge/React.js-61DAFB?logo=react&logoColor=black&style=flat)
 - ![Next.js](https://img.shields.io/badge/Next.js-000000?logo=next.js&logoColor=white&style=flat)
 - ![Json-server](https://img.shields.io/badge/Json--server-0A0A0A?logo=json&logoColor=white&style=flat)
@@ -70,7 +71,7 @@ Con estos pasos, los usuarios podrán disfrutar de una experiencia de lectura de
 
 ## ## Vista Previa 🌠 📸
 
-![Pagina-principal](image.png)
+![Pagina-principal](image-1.png)
 ![Tiradas](image-3.png)
 ![Pagina-tiradas](image-2.png)
 
@@ -79,23 +80,23 @@ Con estos pasos, los usuarios podrán disfrutar de una experiencia de lectura de
 
 Este proyecto fue creado con amor y pasión por:
 
-- [Laura Gil Solano]
-   - [LinkedIn](https://www.linkedin.com/in/laura-gil-solano/)
+- Laura Gil Solano
+- [LinkedIn](https://www.linkedin.com/in/laura-gil-solano/)
 
-- [Otro Nombre de Autora]
-   - [LinkedIn](enlace_a_perfil_linkedin)
+- Carolina Delfa
+- [LinkedIn](https://www.linkedin.com/)
 
-- [Stefania Desogus]
-   - [LinkedIn](https://www.linkedin.com/in/stefania-desogus/)
+- Stefania Desogus
+- [LinkedIn](https://www.linkedin.com/in/stefania-desogus/)
 
-- [Gabriela Irimia](https://www.linkedin.com/in/gabriela-irimia/)
-   - [LinkedIn](https://www.linkedin.com/in/gabriela-irimia/)
+- Gabriela Irimia
+- [LinkedIn](https://www.linkedin.com/in/gabriela-irimia/)
 
-   - [Jessica Zapata]
-   - [LinkedIn](https://www.linkedin.com/in/j%C3%A9ssica-zapata-sol%C3%B3rzano-07401b29b/)
+- Jessica Zapata
+- [LinkedIn](https://www.linkedin.com/in/j%C3%A9ssica-zapata-sol%C3%B3rzano-07401b29b/)
 
-- [Zohra Bellamine]
-   - [LinkedIn](https://www.linkedin.com/in/z-bellamine/)
+- Zohra Bellamine
+- [LinkedIn](https://www.linkedin.com/in/z-bellamine/)
 
 ## Estructura del Proyecto 🏗️
 
