@@ -24,6 +24,9 @@ https://6388b6e5a4bb27a7f78f96a5.mockapi.io/sakura-cards/
 - ![React.js](https://img.shields.io/badge/React.js-61DAFB?logo=react&logoColor=black&style=flat)
 - ![Next.js](https://img.shields.io/badge/Next.js-000000?logo=next.js&logoColor=white&style=flat)
 - ![Json-server](https://img.shields.io/badge/Json--server-0A0A0A?logo=json&logoColor=white&style=flat)
+- ![Material-UI](https://img.shields.io/badge/Material--UI-0081CB?logo=material-ui&logoColor=white&style=flat)
+- ![Axios](https://img.shields.io/badge/Axios-56A7F7?logo=axios&logoColor=white&style=flat)
+
 
 ## Herramientas 🛠
 - ![Visual Studio Code](https://img.shields.io/badge/VS%20Code-007ACC?logo=visual-studio-code&logoColor=white&style=flat)
