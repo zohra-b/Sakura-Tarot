@@ -82,10 +82,10 @@ Con estos pasos, los usuarios podrán disfrutar de una experiencia de lectura de
 
 ## ## Vista Previa 🌠 📸
 
-![Pagina-principal](</img-readme/Captura de pantalla 2024-01-26 094522-1.png>)
-![Tiradas](</img-readme/Captura de pantalla 2024-01-26 094543-1.png>)
-![Pagina-tiradas](</img-readme/Captura de pantalla 2024-01-26 094614.png>)
-![Historial](</img-readme/Captura de pantalla 2024-01-26 094645.png>)
+![Pagina-principal](<img-readme/Captura de pantalla 2024-01-26 094522-1.png>)
+![Tiradas](<img-readme/Captura de pantalla 2024-01-26 094543-1.png>)
+![Pagina-tiradas](<img-readme/Captura de pantalla 2024-01-26 094614.png>)
+![Historial](<img-readme/Captura de pantalla 2024-01-26 094645.png>)
 
 ## Autoras 👩‍💻
 
