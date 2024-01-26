@@ -49,3 +49,14 @@ h1.titleWithOrnament {
     min-width: auto;
   }
 }
+
+@media (max-width: 768px) {
+  .section {
+    padding: 0 1rem;
+    width: 100%;
+  }
+
+  .main {
+    height: auto;
+  }
+}

@@ -31,5 +31,6 @@
   .buttonPrimary,
   .buttonSecondary {
     max-width: 100%;
+    width: 100%;
   }
 }

@@ -1,18 +1,25 @@
-.header{
-    width: 100%;
-    background-color: var( --secondary-color);
-    display: flex;
-    align-items: center;
-    justify-content:center;
+.header {
+  align-items: center;
+  background-color: var(--secondary-color);
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
-.header a{
-    width: 100%;
-    padding: .5rem;
-    display: flex;
-    align-items: center;
-    justify-content:center;
+.header a {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+  width: 100%;
 }
 
-.header img{
-    width: 8%;
+.header img {
+  width: 8%;
+}
+
+@media (max-width: 480px) {
+  .header img {
+    max-width: 25%;
+    width: auto;
+  }
 }
