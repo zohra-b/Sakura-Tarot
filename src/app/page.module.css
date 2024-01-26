@@ -57,6 +57,6 @@ h1.titleWithOrnament {
   }
 
   .main {
-    height: auto;
+    height: 60vh;
   }
 }
